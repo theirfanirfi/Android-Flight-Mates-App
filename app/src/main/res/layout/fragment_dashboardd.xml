@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    tools:context="com.example.samad.flightmates.Dashboardd$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/fullSizeName"
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="Samad"
+
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/section_label"
+        android:layout_alignEnd="@+id/profile"
+        android:layout_marginEnd="11dp" />
+
+
+    <ListView
+        android:id="@+id/profile"
+
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/fullSizeName"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/addflight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:text="Add Your Flights"
+        android:background="@drawable/rounded_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/profile"
+        android:layout_marginStart="76dp" />
+
+
+</RelativeLayout>
+

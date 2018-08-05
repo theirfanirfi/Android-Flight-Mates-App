@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.samad.flightmates.Dashboardd">
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="About"
+        app:showAsAction="never" />
+
+    <item
+    android:id="@+id/logout"
+    android:orderInCategory="100"
+    android:title="Logout"
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/ResetPassword"
+        android:orderInCategory="100"
+        android:title="ResetPassword"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/ns"
+        android:orderInCategory="100"
+        android:title="Start Notifications"
+        app:showAsAction="never" />
+
+
+</menu>

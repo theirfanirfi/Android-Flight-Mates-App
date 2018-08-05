@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/l1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.samad.flightmates.addFlight">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/cpb_white"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/fn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Flight Number"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_pnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/pnr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PNR"
+                android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="From destination"
+                android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="To destination"
+                android:inputType="textPersonName" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView544"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Off Time: "
+                android:textSize="18dp" />
+
+    <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+        android:id="@+id/sdtp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:alwaysDrawnWithCache="true"
+        android:background="@android:color/background_light"
+        android:textDirection="firstStrongRtl"
+        app:picker_visibleItemCount="7" />
+
+
+    <Button
+        android:id="@+id/addFlightFormBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/roundedaccount"
+        android:text="Add your Flight"
+
+        android:textAllCaps="false"
+        android:textColor="@color/cpb_white" />
+
+
+</LinearLayout>
+

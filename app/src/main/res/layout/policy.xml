@@ -1,0 +1,114 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:fillViewport="true"
+        android:id="@+id/q_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="20dp"
+                android:text="FLIGT MATES TERM AND POLICLY " />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_below="@id/question_text"
+                android:layout_marginTop="25dp"
+                android:id="@+id/comprehension"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/sentence1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reading comprehension is defined as the level of understanding of a text/message." />
+
+                <TextView
+                    android:id="@+id/sentence2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This understanding comes from the interaction between the words that are written and how they trigger knowledge outside ." />
+
+                <TextView
+                    android:id="@+id/sentence3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proficient reading depends on the ability to recognize words quickly and effortlessly." />
+
+                <TextView
+                    android:id="@+id/sentence4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Many educators in the USA believe that students need to learn to analyze text." />
+
+                <TextView
+                    android:id="@+id/sentence5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="But other US educators consider this reading approach to be completely backward." />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/explanation_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comprehension"
+                android:layout_marginTop="25dp"
+                android:padding="10dp"
+                android:text="Explanation: Sentence you have selected is right?" />
+
+            <View
+                android:visibility="invisible"
+                android:id="@+id/user_optionset4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/explanation_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:background="@android:color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+
+        <Button
+            android:id="@+id/Take"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:onClick="goBack"
+            android:gravity="center"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:text="Go Back"
+            android:background="@color/cpb_white"
+            android:textColor="#FF8337" />
+
+    </LinearLayout>
+
+</RelativeLayout>
